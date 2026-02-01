@@ -29,6 +29,7 @@ function App() {
 
   useEffect(() => {
     fetchBookings();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // CREATE - Add new booking
