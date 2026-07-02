@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# FitBook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fitness class booking app built with React and Firebase Firestore.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+FitBook lets users book fitness classes and manage those bookings with full create, read, update, and delete support, backed by a live Firestore database. It is a small learning and demo project built to practise React with Firebase and react-bootstrap.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Create a new class booking
+- Read and list all existing bookings
+- Update an existing booking
+- Delete a booking
+- Real-time persistence with Firebase Firestore
+- Clean, responsive UI with react-bootstrap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- React 19
+- Firebase Firestore
+- react-bootstrap and Bootstrap 5
+- Create React App (react-scripts)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
+- Node.js 18 or newer
+- A Firebase project with Firestore enabled
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the repository
+```bash
+git clone https://github.com/Momosquare016/fitbook.git
+cd fitbook
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Install dependencies
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Configure Firebase
+Add your own Firebase project's configuration in `src/firebase.js`, then make sure Firestore is enabled in the Firebase console.
 
-### `npm run eject`
+### 4. Run the app
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Then open http://localhost:3000 in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `src/components/BookingForm.js` handles creating and editing bookings
+- `src/components/BookingList.js` lists all bookings
+- `src/components/BookingCard.js` renders a single booking with edit and delete actions
+- `src/firebase.js` initialises Firebase and exports the Firestore instance
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
 
-## Learn More
+Built by Muhammad Ali
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+LinkedIn: https://www.linkedin.com/in/muhammad-ali-r-35a9762b4
